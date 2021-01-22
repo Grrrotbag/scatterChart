@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ivory: #eaf2e3ff;
+  --middle-blue-green: #a6ede2ff;
+  --quick-silver: #aaa09cff;
+  --tart-orange: #f25757ff;
+  --sandy-brown: #f2a05dff;
+  --corn: #f2e863ff;
+  --orange-yellow-crayola: #f2cd60ff;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  background-color: var(--quick-silver);
+  background-size: 64px 128px;
+}
+
+#legend {
+  border: 1px black;
+  stroke: 1px solid var(--orange-yellow-crayola);
+  background-color: red;
+}
+
+svg {
+  stroke: 1px solid var(--tart-orange);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  background-color: var(--ivory);
+  border-radius: 5px;
+}
+
+#x-axis path {
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+
+#y-axis path {
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+
+#y-axis text,
+#x-axis text {
+  font-size: 1.4em;
+}
+
+h1 {
+  font-family: "Inter";
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+  color: var(--tart-orange);
+}
+
+.dot:hover {
+  background-color: var(--orange-yellow-crayola);
+  fill: var(--orange-yellow-crayola);
+}
+
+div.tooltip {
+  position: absolute;
+  padding: 15px;
+  font: 12px sans-serif;
+  background: var(--tart-orange);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  pointer-events: none;
+}
